@@ -2,5 +2,4 @@
 
 set -ex
 
-make gettext
-
+echo "TBD"
