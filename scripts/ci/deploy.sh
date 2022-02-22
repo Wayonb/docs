@@ -24,6 +24,6 @@ else
    echo "Committing"
    git commit -m "Release docs" > /dev/null 2>&1
    echo "Pushing"
-   git push --set-upstream github gh-pages --force
+   git push --set-upstream origin gh-pages --force
    echo "Publish docs"
 fi
