@@ -13,6 +13,8 @@ if [ "$SKIP_RELEASE_PUBLISH" = "true" ]; then
    echo "Skipping publishing of docs"
 else
    echo "Publishing..."
+   git remote add github "https://${GITHUB_ACCESS_TOKEN}@github.com/symbol/symbol-docs.git" > /dev/null 2>&1
+
    echo "Creating gh-pages branch"
    git checkout -b gh-pages
 
@@ -24,6 +26,6 @@ else
    echo "Committing"
    git commit -m "Release docs" > /dev/null 2>&1
    echo "Pushing"
-   git push --set-upstream origin gh-pages --force
+   git push --set-upstream github gh-pages --force
    echo "Publish docs"
 fi
