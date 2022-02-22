@@ -11,7 +11,7 @@ tx_init() {
 hostname = https://www.transifex.com
 username = $TRANSIFEX_USER
 password = $TRANSIFEX_PASSWORD
-token =" > ~/.transifexrc
+" > ~/.transifexrc
 }
 
 tx_push() {

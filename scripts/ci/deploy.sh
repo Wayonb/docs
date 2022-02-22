@@ -6,7 +6,7 @@ echo "Building docs..."
 make alldocs
 
 echo "Linking Check..."
-make linkcheck
+#make linkcheck
 
 #  The $SKIP_RELEASE_PUBLISH env variable can avoid republishing if the release process fails.
 if [ "$SKIP_RELEASE_PUBLISH" = "true" ]; then
