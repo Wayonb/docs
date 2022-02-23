@@ -2,5 +2,5 @@
 
 set -ex
 
-#bash +e scripts/ci/transifex.sh
-bash scripts/ci/deploy.sh
+#bash scripts/ci/transifex.sh
+#bash scripts/ci/deploy.sh
